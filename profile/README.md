@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/koborin-ai/brand/raw/main/lockup/pixel/png/on-dark/horizontal@2x.png">
-    <img src="https://github.com/koborin-ai/brand/raw/main/lockup/pixel/png/on-light/horizontal@2x.png" alt="koborin.ai" width="380">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/koborin-ai/brand/raw/main/lockup/pixel/png/transparent/horizontal@2x.png">
+    <img src="https://github.com/koborin-ai/brand/raw/main/lockup/pixel/png/on-light/horizontal@2x.png" alt="koborin.ai">
   </picture>
 </p>
 
