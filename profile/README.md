@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-✨ Personal org for orbiting code, sound, and pause.
+Personal org for orbiting code, sound, and pause.
 
 [![Built on Blacksmith](https://img.shields.io/badge/Built%20on-Blacksmith-F0FB29?style=for-the-badge&labelColor=202020)](https://www.blacksmith.sh/)
 
