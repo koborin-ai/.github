@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="572" viewBox="0 0 880 572" role="img">
 <title>koborin.ai architecture</title>
-<desc>GitHub Actions synthesizes the TerraDart site stack and runs terraform apply for the koborin.ai custom domain. Wrangler deploys static assets to Worker koborin-ai-web. Terraform state is in R2.</desc>
+<desc>GitHub Actions runs the TerraDart site stack with terradart plan and terradart apply. Wrangler deploys static assets to Worker koborin-ai-web. State is in R2.</desc>
 <rect width="880" height="572" fill="#0b0d12"/>
 <rect x="548" y="20" width="280" height="56" rx="2" ry="2" fill="none" stroke="#d5dae1" stroke-width="1" vector-effect="non-scaling-stroke"/>
 <text x="688" y="40" fill="#eceae5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle">readers</text>
@@ -11,10 +11,9 @@
 <text x="32" y="108" fill="#eceae5" font-family="'Geist', ui-sans-serif, system-ui, sans-serif" font-size="15" text-anchor="start" dominant-baseline="middle">GitHub Actions</text>
 <text x="520" y="108" fill="#eceae5" font-family="'Geist', ui-sans-serif, system-ui, sans-serif" font-size="15" text-anchor="start" dominant-baseline="middle">Cloudflare</text>
 <rect x="32" y="124" width="360" height="152" rx="2" ry="2" fill="none" stroke="#d5dae1" stroke-width="1" vector-effect="non-scaling-stroke"/>
-<text x="212" y="164" fill="#eceae5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle">plan-infra · release-infra</text>
-<text x="212" y="188" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" dominant-baseline="middle">dart run bin/synth.dart</text>
-<text x="212" y="210" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" dominant-baseline="middle">terraform plan</text>
-<text x="212" y="232" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" dominant-baseline="middle">terraform apply</text>
+<text x="212" y="176" fill="#eceae5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle">plan-infra · release-infra</text>
+<text x="212" y="200" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" dominant-baseline="middle">terradart plan</text>
+<text x="212" y="224" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" dominant-baseline="middle">terradart apply</text>
 <rect x="520" y="124" width="336" height="152" rx="2" ry="2" fill="none" stroke="#d5dae1" stroke-width="1" vector-effect="non-scaling-stroke"/>
 <text x="688" y="176" fill="#eceae5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle">koborin.ai</text>
 <text x="688" y="200" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" dominant-baseline="middle">DNS zone</text>
@@ -34,11 +33,10 @@
 <line x1="456" y1="256" x2="456" y2="472" stroke="#d5dae1" stroke-width="1" vector-effect="non-scaling-stroke" stroke-dasharray="3 3"/>
 <line x1="456" y1="472" x2="510" y2="472" stroke="#d5dae1" stroke-width="1" vector-effect="non-scaling-stroke" stroke-dasharray="3 3"/>
 <path d="M511 468.5 L516 472 L511 475.5" fill="none" stroke="#d5dae1" stroke-width="1" vector-effect="non-scaling-stroke"/>
-<rect x="467.5" y="391" width="49.0" height="18" rx="2" ry="2" fill="#0b0d12" stroke="none"/>
+<rect x="467.5" y="391" width="49" height="18" rx="2" ry="2" fill="#0b0d12" stroke="none"/>
 <text x="492" y="400" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="middle" dominant-baseline="middle">state</text>
 <rect x="520" y="424" width="336" height="96" rx="2" ry="2" fill="none" stroke="#d5dae1" stroke-width="1" vector-effect="non-scaling-stroke"/>
-<text x="688" y="456" fill="#eceae5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle">koborin-ai-tfstate</text>
-<text x="688" y="480" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle" dominant-baseline="middle">terraform/site/terraform.tfstate</text>
+<text x="688" y="472" fill="#eceae5" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle">koborin-ai-tfstate</text>
 <text x="32" y="472" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="start" dominant-baseline="middle">runners · blacksmith</text>
 <text x="32" y="548" fill="#eceae56b" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="start" dominant-baseline="middle">Scoped API token for Cloudflare. Dashed line is state, via R2 keys.</text>
 </svg>

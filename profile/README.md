@@ -11,7 +11,7 @@ Personal org for orbiting code, sound, and pause.
 
 ## Architecture
 
-The site is static Astro on Cloudflare Workers. GitHub Actions synthesizes the TerraDart site stack with `dart run bin/synth.dart`. `release-infra` runs `terraform apply`. The state file is `terraform/site/terraform.tfstate` in the R2 bucket `koborin-ai-tfstate`.
+The site is static Astro on Cloudflare Workers. GitHub Actions runs the TerraDart site stack with the `terradart` CLI, which fetches the OpenTofu engine. `plan-infra` runs `terradart plan`. `release-infra` runs `terradart apply`. State is in the R2 bucket `koborin-ai-tfstate`.
 
 <p align="center">
   <picture>
