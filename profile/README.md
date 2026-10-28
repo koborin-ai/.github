@@ -5,9 +5,13 @@
   </picture>
 </p>
 
-Personal org for orbiting code, sound, and pause.
+Software engineer. Building tools, thinking about life.
 
-[![Built on Blacksmith](https://img.shields.io/badge/Built%20on-Blacksmith-F0FB29?style=for-the-badge&labelColor=202020)](https://www.blacksmith.sh/)
+## What's here
+
+- [koborin-ai/site](https://github.com/koborin-ai/site): Personal site at [koborin.ai](https://koborin.ai).
+- [koborin-ai/langfuse](https://github.com/koborin-ai/langfuse): Self-hosted Langfuse at langfuse.koborin.ai (GCE Spot VM + Cloudflare Tunnel, TerraDart, WIF).
+- [koborin-ai/brand](https://github.com/koborin-ai/brand): Visual identity and brand assets for koborin-ai. Icon, lockups, palette, typography, and voice.
 
 ## Architecture
 
@@ -19,6 +23,8 @@ The site is static Astro on Cloudflare Workers. GitHub Actions runs the TerraDar
     <img src="https://github.com/koborin-ai/.github/raw/main/profile/architecture-light.svg" alt="koborin.ai architecture. GitHub Actions deploys to Cloudflare DNS, Workers static assets, and R2 state.">
   </picture>
 </p>
+
+[![Built on Blacksmith](https://img.shields.io/badge/Built%20on-Blacksmith-F0FB29?style=for-the-badge&labelColor=202020)](https://www.blacksmith.sh/)
 
 | Host | Repository | Runs on |
 | --- | --- | --- |
