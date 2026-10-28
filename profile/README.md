@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/koborin-ai/brand/raw/main/lockup/pixel/png/transparent/horizontal@2x.png">
-    <img src="https://github.com/koborin-ai/brand/raw/main/lockup/pixel/png/on-light/horizontal@2x.png" alt="koborin.ai">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/koborin-ai/brand/raw/main/lockup/lockup-dark-256.png">
+    <img src="https://github.com/koborin-ai/brand/raw/main/lockup/lockup-light-256.png" alt="koborin.ai" width="440">
   </picture>
 </p>
 
@@ -11,16 +11,19 @@ Personal org for orbiting code, sound, and pause.
 
 ## Architecture
 
-The site is static Astro on Cloudflare Workers. It is a TerraDart stack applied from GitHub Actions, with Terraform state in R2.
+The site is static Astro on Cloudflare Workers. GitHub Actions runs the TerraDart site stack with the `terradart` CLI, which fetches the OpenTofu engine. `plan-infra` runs `terradart plan`. `release-infra` runs `terradart apply`. State is in the R2 bucket `koborin-ai-tfstate`.
 
 <p align="center">
-  <img src="https://github.com/koborin-ai/.github/raw/main/profile/architecture.svg" alt="koborin.ai architecture: GitHub Actions deploy to Cloudflare (DNS, Workers, R2)">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./architecture-dark.svg">
+    <img src="./architecture-light.svg" alt="koborin.ai architecture. GitHub Actions deploys to Cloudflare DNS, Workers static assets, and R2 state.">
+  </picture>
 </p>
 
 | Host | Repository | Runs on |
 | --- | --- | --- |
 | [koborin.ai](https://koborin.ai) | [koborin-ai/site](https://github.com/koborin-ai/site#readme) | Cloudflare Workers (static assets) |
 
-Each repository's README has the detailed architecture and CI/CD. The diagram source is [`architecture.drawio`](./architecture.drawio).
+Each repository's README has the detailed architecture and CI/CD.
 
 Owned by [@nozomi-koborinai](https://github.com/nozomi-koborinai).
