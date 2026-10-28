@@ -15,8 +15,8 @@ The site is static Astro on Cloudflare Workers. GitHub Actions runs the TerraDar
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./architecture-dark.svg">
-    <img src="./architecture-light.svg" alt="koborin.ai architecture. GitHub Actions deploys to Cloudflare DNS, Workers static assets, and R2 state.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/koborin-ai/.github/raw/main/profile/architecture-dark.svg">
+    <img src="https://github.com/koborin-ai/.github/raw/main/profile/architecture-light.svg" alt="koborin.ai architecture. GitHub Actions deploys to Cloudflare DNS, Workers static assets, and R2 state.">
   </picture>
 </p>
 
