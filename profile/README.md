@@ -5,7 +5,9 @@
   </picture>
 </p>
 
-Software engineer. Building tools, thinking about life.
+Software engineer. Building tools, thinking about life.  
+
+[![Built on Blacksmith](https://img.shields.io/badge/Built%20on-Blacksmith-F0FB29?style=for-the-badge&labelColor=202020)](https://www.blacksmith.sh/)
 
 ## What's here
 
@@ -23,8 +25,6 @@ The site is static Astro on Cloudflare Workers. GitHub Actions runs the TerraDar
     <img src="https://github.com/koborin-ai/.github/raw/main/profile/architecture-light.svg" alt="koborin.ai architecture. GitHub Actions deploys to Cloudflare DNS, Workers static assets, and R2 state.">
   </picture>
 </p>
-
-[![Built on Blacksmith](https://img.shields.io/badge/Built%20on-Blacksmith-F0FB29?style=for-the-badge&labelColor=202020)](https://www.blacksmith.sh/)
 
 | Host | Repository | Runs on |
 | --- | --- | --- |
